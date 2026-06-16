@@ -1,0 +1,4 @@
+Django>=5.2
+djangorestframework>=3.17
+django-cors-headers>=4.9
+Pillow>=10.0

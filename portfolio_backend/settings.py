@@ -10,6 +10,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '.onrender.com',
+    '.vercel.app',
 ]
 
 INSTALLED_APPS = [
@@ -19,14 +20,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
     'corsheaders',
+
     'api',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
     'corsheaders.middleware.CorsMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -69,8 +74,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'en-us'
+
 TIME_ZONE = 'UTC'
+
 USE_I18N = True
+
 USE_TZ = True
 
 STATIC_URL = 'static/'
@@ -81,9 +89,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# CORS SETTINGS
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://shivam-portfolio-rosy.vercel.app',
+    'https://shivam-portfolio-p3i0hIzl0z-iot-nexus01.vercel.app',
 ]
 
 REST_FRAMEWORK = {
